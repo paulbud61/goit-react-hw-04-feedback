@@ -1,0 +1,49 @@
+optionsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.optionButton {
+  padding: 10px 20px;
+  font-size: 20px;
+  width: 100px;
+  border-radius: 15px;
+  height: 50px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.good {
+  background-color: #d70575;
+}
+
+.neutral {
+  background-color: #e90c0c;
+}
+
+.bad {
+  background-color: #05d40f;
+}
+
+.good:hover {
+  background-color: #1e0ad6;
+}
+
+.neutral:hover {
+  background-color: #d519d2;
+  scale: 1.2;
+}
+
+.bad:hover {
+  background-color: #de0526;
+  scale: 1.2;
+}
+@media (max-width: 420px) {
+  .optionsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
